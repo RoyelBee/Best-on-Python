@@ -1,0 +1,5 @@
+# By using pyinstaller 
+pyinstaller example.py
+
+# it some error 
+pyinstaller --hidden-import pkg_resources.py2_warn example.py
