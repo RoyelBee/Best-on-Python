@@ -1,5 +1,5 @@
 # By using pyinstaller 
 pyinstaller example.py
 
-# it some error 
+# if error : pkg_resources.py2_warn occures
 pyinstaller --hidden-import pkg_resources.py2_warn example.py
