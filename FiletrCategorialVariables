@@ -1,0 +1,10 @@
+# To find out all categorical variables of a data set 
+# In general data type 'Object' denotes this columns contain text 
+
+# Get list of categorical variables
+# Here X_train is Dataset 
+s = (X_train.dtypes == 'object')
+object_cols = list(s[s].index)
+
+print("Categorical variables:")
+print(object_cols)
