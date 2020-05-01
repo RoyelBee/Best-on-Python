@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Best-on-Python.iml" filepath="$PROJECT_DIR$/.idea/Best-on-Python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SKF_Final_outstanding_report/.idea/SKF_Final_outstanding_report.iml" filepath="$PROJECT_DIR$/../SKF_Final_outstanding_report/.idea/SKF_Final_outstanding_report.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../practice/.idea/practice.iml" filepath="$PROJECT_DIR$/../practice/.idea/practice.iml" />
     </modules>
   </component>
 </project>
