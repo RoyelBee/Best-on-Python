@@ -2,4 +2,4 @@
 pyinstaller example.py
 
 # if error : pkg_resources.py2_warn occures
-pyinstaller --hidden-import pkg_resources.py2_warn example.py
+pyinstaller --hidden-import pkg_resources.py2_warn setup.py
