@@ -1,25 +1,21 @@
-# # For Loop -----------------------------------
+# # For Loop -------------------------------------
 Employee_list = ["Rabby", "Royel", "Basir"]
-for x in Employee_list:
-    print(x)
 
-# # Break loop ---------------------------------
-Employee_list = ["Rabby", "Royel", "Basir"]
-for x in Employee_list:
-    print(x)
-    if x == "Royel":
-        break
+# for x in Employee_list:
+#     print(x)
 
-# # The range function --------------------------
-for x in range(6):
-    print(x)
-for x in range(2, 30, 3):
-    print(x)
+# # Break loop -----------------------------------
+Employee_list = ["Rabby", "Royel", "Basir", 'Royel']
 
-# # Nested loop ---------------------------------
-Color = ["red", "green", "blue"]
-Branch_list = ["Bogskf", "Rngskf", "Frdskf"]
+# for x in Employee_list:
+#     print(x)
+#     if x == "Royel":
+#         break
 
-for x in Branch_list:
-    for y in Color:
-        print(x, y)
+# # The range function ---------------------------
+# for x in range(31):
+#     print(x)
+#
+# for x in range(0, 101, 10):
+#     print(x)
+
