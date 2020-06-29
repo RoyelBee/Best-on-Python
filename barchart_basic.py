@@ -36,7 +36,6 @@ def number_decorator(number):
     number = number + 'K'
     return number
 
-
 def thousand_K_number_decorator(number):
     number = int(number / 1000)
     number = format(number, ',')
