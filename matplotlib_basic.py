@@ -57,7 +57,7 @@ ax.plot(x, y, color='red', linewidth=2)
 ax.plot(x, z, color='blue', linewidth=2)
 
 for a, b in zip(x, y):
-    plt.text(a, b, str(b) + 'K',
+    plt.text(a, b, str(int(b / 1000)) + 'K',
              ha='center', va='bottom',
              fontsize=9, fontweight='bold')
 
@@ -66,14 +66,16 @@ for a, b in zip(x, z):
              ha='center', va='bottom',
              fontsize=9, fontweight='bold', rotation=45)
 
-# ax.legend(labels=('sales', 'return'))
+ax.legend(labels=('sales', 'return'))
 
 # Placed legend in the bottom
-ax.legend(labels=('sales', 'return'), loc='upper center', bbox_to_anchor=(0.5, -0.2),
-          fancybox=True, shadow=True, ncol=4)
+# ax.legend(labels=('sales', 'return'), loc='upper center',
+#           bbox_to_anchor=(0.5, -0.3),
+#           fancybox=True, shadow=True, ncol=2)
 
 plt.xticks(rotation=90, fontweight='bold')
-plt.yticks(np.arange(0, max(z) * 1.2, (max(z) * 1.2) / 10), fontweight='bold')
+# plt.yticks(np.arange(0, 500000, 10000), fontweight='bold')
+plt.yticks(np.arange(0, max(z) * 1.5, (max(z) * 1.5) / 10), fontweight='bold')
 
 plt.xlabel("Sales person", color='black', fontsize=14, fontweight='bold')
 plt.ylabel("Amount", color='black', fontsize=14, fontweight='bold')
