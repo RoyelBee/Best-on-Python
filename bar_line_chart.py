@@ -49,7 +49,7 @@ def thousand_K_number_decorator(number):
 
 bar_index = np.arange(len(RSMTR))
 # create plot
-fig, ax = plt.subplots(figsize=(12.6, 6))
+fig, ax = plt.subplots(figsize=(12, 6))
 bar_width = 0.75
 opacity = 0.9
 
