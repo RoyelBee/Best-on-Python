@@ -115,10 +115,12 @@ ax.text(.5 * (left + right), .3 * (bottom + top), return_p,
         transform=ax.transAxes)
 # plt.show()
 plt.savefig('box.png')
-img1 = Image.open('E:/NDM_wise_Outstanding/box.png')
-img2 = Image.open('F:/test_picture/16.top5_delivery_persons_return.png')
+
+img1 = Image.open('./box.png')
+img2 = Image.open('./joined.png')
 width, height = img1.size
 imageSize = Image.new('RGB', (1200, 680))
 imageSize.paste(img1, (0, 0))
 imageSize.paste(img2, (0, height))
 imageSize.save("box_bar.png")
+print('Mail Send')

@@ -30,20 +30,20 @@ msgRoot.attach(msg)
 # msgText = MIMEText('This is the alternative plain text message.')
 # msgAlternative.attach(msgText)
 
-msgText = MIMEText("""
-                       <img src="cid:img1_2" height='481', width='1281'><br>
-                        <br>
-                       """, 'html')
+msgText = MIMEText(""" 
+                     <img src="cid:img">
+                    
+                    """, 'html')
 
 msg.attach(msgText)
 
 # --------- Set Credit image in mail   -----------------------
-img = open('./joined.png', 'rb')
-img1_2 = MIMEImage(img.read())
-img.close()
-
-img1_2.add_header('Content-ID', '<img1_2>')
-msgRoot.attach(img1_2)
+img = open('D:/Python Code/Best-on-Python/box.png', 'rb')
+img = MIMEImage(img.read())
+# img.close()
+#
+img.add_header('Content-ID', '<img>')
+msgRoot.attach(img)
 
 # # ----------- Finally send mail and close server connection ---
 server = smtplib.SMTP(email_server_host, port)
