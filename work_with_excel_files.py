@@ -8,6 +8,7 @@ from email import encoders
 from email.mime.base import MIMEBase
 
 
+
 def table_data():
     xl = xlrd.open_workbook('D:/Python Code/Best-on-Python/Data/ClosedToMatured.xlsx')
     sh = xl.sheet_by_name('Sheet1')
@@ -30,11 +31,14 @@ def table_data():
 
         for j in range(1, 2):
             td = td + "<td class=\"idcol\">" + str(sh.cell_value(i, j)) + "</td>\n"
+
         for j in range(2, 7):
             td = td + "<td class=\"unit\">" + str(sh.cell_value(i, j)) + "</td>\n"
+
         for j in range(7, sh.ncols):
             td = td + "<td class=\"idcol\">" + str(int(sh.cell_value(i, j))) + "</td>\n"
         td = td + "</tr>\n"
+
     html = th + td
     return html
 
@@ -104,12 +108,12 @@ msgText = MIMEText("""
 </head>
 
 <body>
-	<h3 style='text-align:left'> Top 20 Closed to Mature Credit</h3>
+    <h3 style='text-align:left'> Top 20 Closed to Mature Credit</h3>
 	<table> """ + table_data() + """ </table>
 </body>
 
 </html>
-                     
+
 """, 'html')
 
 msg.attach(msgText)
