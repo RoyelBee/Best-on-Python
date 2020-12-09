@@ -11,3 +11,13 @@ Step 2: Now create a Task Scheduler where set
 step 3: Set others settings as required.
 
 Thats All. Happy :) :) :) :) :) :)
+
+
+If you get an error or Resticted : Then Flow this 
+open powershell as an Administrator Mode
+check status: GET-Executionpolicty -list 
+
+If you get any resticted policy  then flow 
+set unristction policy: Set-ExecutionPolicy -ExecutionPolicy unrestricted 
+
+Thats it 
