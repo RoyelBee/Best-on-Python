@@ -4,10 +4,11 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/Python Code" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.8 (env_3.8)" jdkType="Python SDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="practice" />
     <orderEntry type="module" module-name="SKF_Final_outstanding_report" />
+    <orderEntry type="module" module-name="BasicWebScrapeing" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="renderExternalDocumentation" value="true" />
